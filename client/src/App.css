@@ -1,24 +1,319 @@
+/* DEFAULT STYLES FROM CREATE REACT APP MODULE */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
+  height: 400px;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.App-title {
+  font-size: 90px;
+  padding-bottom: 10px;
+  text-shadow: 6px 6px 14px black;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* CUSTOM STYLES */
+nav {
+  width: 100%;
+  padding: 10px 0;
+}
+
+nav a {
+  margin: 10px;
+  padding: 0px 30px 0px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  text-shadow: 2px 2px 8px black;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  border-radius: 8px;
+}
+
+nav a:hover {
+  color: #7f4dd2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+header {
+  background-image: url('https://images.studentuniverse.com/new/suwebui/photos/top/plane-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* CARD CONTENT */
+.card {
+  border-radius: 15px;
+}
+
+.space {
+  margin: 15px 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #11f;
+  border-radius: 2px;
+  border: none;
+  padding: 3px;
+}
+
+.btn-primary:hover {
+  background-color: #77f;
+}
+
+.error {
+  background-color: #ffcdd2;
+  color: #ef5350;
+  border: 1px solid #ef5350;
+  border-radius: 2px;
+  padding: 10px 30px;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  top: 450px;
+  left: 39px;
+}
+
+.success {
+  background-color: #ceffce;
+  color: green;
+  border: 1px solid green;
+  border-radius: 2px;
+  padding: 10px 30px;
+  width: 75%;
+  margin: 10px auto;
+  position: relative;
+  z-index: 99;
+}
+
+.no-flash {
+  visibility: hidden;
+  padding: 10px 30px;
+  width: 75%;
+  margin: 10px auto;
+}
+
+.x-button {
+  background-color: #ef5350;
+  color: white;
+  border-radius: 2px;
+  float: right;
+}
+
+/* ABOUT ME PROFILE */
+.About-container-how p {
+  font-size: 1em;
+  padding: 10px;
+}
+
+.profile {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  padding: 100px, 0px, 100px, 0px;
+}
+
+#profile-heading {
+  margin-bottom: 40px;
+}
+
+.profile-body {
+  margin-bottom: 200px;
+}
+
+#profile-empty-search a{
+  font-size: 14px;
+}
+
+#profile-pack, #profile-search {
+  margin-bottom: 25px;
+}
+
+.card-content {
+  font-size: 24px;
+}
+
+.team-link {
+  font-size: 20px;
+  color: #3d3b3b;
+}
+
+/* HOW IT WORKS */
+.About-container-how {
+  padding-top: 360px;
+  padding-bottom: 100px;
+  background-color: #83A2A7;
+}
+
+.how-it-works {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  height: 250px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.how {
+  font-size: 100px;
+  text-align: center;
+}
+
+/* TEAM SECTION */
+#team {
+  padding: 60px 0;
+}
+
+#team-description {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+#team img {
+  border-radius: 10px 10px 0 0;
+}
+
+/* RESTAURANT RESULTS */
+.yelp {
+  height: 30px;
+  width: 30px;
+}
+
+.card-image { 
+  border-radius: 15px;
+}
+
+.card-image-business img {
+  max-height: 300px;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.restaurant-results input {
+  outline: none;
+}
+
+#results-rest-name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.rest-results-detail {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .card-image-business img {
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 15px;
+    padding: 0;
+  }
+  #results-rest-name {
+    font-size: 12px;
+    margin-top: 5px
+  }
+  .rest-results-detail {
+    display: none;
+  }
+  .card.small {
+    height: 195px;
+  }
+}
+
+/* SAVED RESTAURANTS */
+.card-image-saved img {
+  max-height: 300px;
+  max-width: 300px;
+  padding-top: 8px;
+  border-radius: 15px;
+}
+
+#restaurants-saved {
+  font-size: 14px;
+  padding: 0;
+}
+
+#saved-rest-name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.saved-business {
+  padding-top: 320px;
+}
+
+.results-display {
+  margin-bottom: 50px;
+}
+
+/* SEARCH CONTAINER */
+.Search {
+  padding-top: 320px;
+}
+
+.login-form {
+  padding-top: 320px;
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+
+.signup-form {
+  padding-top: 400px;
+  margin-bottom: 80px;
+}
+
+/* PACKING LIST */
+.packing-list-container {
+  background: url('https://i.imgur.com/A7qKs0ml.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding-top: 30px;
+}
+
+#add-list-item {
+  width: 300px;
+}
+
+.packing-list-item {
+  padding: 15px 0;
+  font-family: 'Kalam', cursive !important;
+  font-size: 20px;
+  width: 400px;
+}
+
+.packing-list-delete {
+  margin-left: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #83A2A7;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3%;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 10px;
+  text-shadow: 2px 2px 8px black;
 }
