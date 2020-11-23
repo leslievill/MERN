@@ -12,9 +12,9 @@ import Signup from './auth/Signup.js';
 import About from './planning/About.js';
 import Results from './planning/Results.js';
 //To allow passing history object as props from Router
-import createHistory from "history/createBrowserHistory"; 
+// import createHistory from "history/createBrowserHistory"; 
 
-const history = createHistory();
+// const history = createHistory();
 
 class App extends Component {
   constructor(props){
@@ -76,7 +76,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router history={history}>
+        <Router >
           <div>
             <Nav user={this.state.user} updateUser={this.getUser} />
             <div className="space">
