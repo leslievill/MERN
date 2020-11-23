@@ -31,6 +31,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.15",
     "morgan": "^1.10.0",
+    "react": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "serve-favicon": "^2.5.0",
     "yelp-fusion": "^3.0.0"

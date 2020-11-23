@@ -52,16 +52,16 @@ class Results extends Component {
     var results;
     var res = this.state.businesses;
 
-    if(this.state.businesses){
-      results = res.map((b)=> {
-        <div className="container Results">
-          <li>b</li>
-        </div>
-      });
-    }else{
-      results = <p>none</p>
-      console.log(this.state.businesses);
-    }
+    // if(this.state.businesses){
+    //   results = res.map((b)=> {
+    //     <div className="container Results">
+    //       <li>b</li>
+    //     </div>
+    //   });
+    // }else{
+    //   results = <p>none</p>
+    //   console.log(this.state.businesses);
+    // }
 
     return(
       <div className="container Results">
