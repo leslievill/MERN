@@ -35,7 +35,7 @@ class Nav extends Component {
           </div>
         </nav>
         <header className="App-header">
-          <p className="App-title"><i className="large material-icons left">card_travel</i>Venture!</p>
+          <p className="App-title"><i className="large material-icons left">card_travel</i>WhereToGo</p>
         </header>
       </div>
     );
