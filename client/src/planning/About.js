@@ -7,36 +7,36 @@ class About extends Component {
       <div className="About-container z-depth-3">
       <section id="team">
         <h5>The Team</h5>
-        <p id="team-description">A full-stack project for General Assembly Web Development Immersive created by:</p>
+        <p id="team-description">A MERN project for the UC Berkeley extension Full Stack program by:</p>
         <div className="container">
           <div className="row">
             <div className="col s12 m4">
               <div className="card">
                 <div className="card-image">
-                  <img className="profile-pic" src="https://i.imgur.com/d2WbTpOm.jpg" alt="Winston" />
+                  <img className="profile-pic" src="https://github.com/kent28808/React-Portfolio/blob/main/src/assets/profile.jpg?raw=true" alt="Ken" />
                 </div>
               <div className="card-content team-members">
-                <a href="https://github.com/winstonsummers" className="team-link">Winston Summers</a>
+                <a href="https://github.com/kent28808" className="team-link">Ken Tanoue</a>
               </div>
             </div>
           </div>
           <div className="col s12 m4">
             <div className="card">
               <div className="card-image">
-                <img className="profile-pic" src="https://i.imgur.com/Xoe7tBpl.jpg?1" alt="Tony" />
+                <img className="profile-pic" src="https://github.com/leslievill/reactportfolio/blob/main/public/images/leslie.png?raw=true" alt="Leslie" />
               </div>
               <div className="card-content">
-                <a href="https://github.com/rallysport206" className="team-link">Tony Phan</a>
+                <a href="https://github.com/leslievill" className="team-link">Leslie Villatoro</a>
               </div>
             </div>
           </div>
           <div className="col s12 m4">
             <div className="card">
               <div className="card-image">
-                <img className="profile-pic" src="https://i.imgur.com/SMoWjxim.jpg?2" alt="Sweeney" />
+                <img className="profile-pic" src="https://github.com/biencarlovilla/About-Me/blob/master/images/portrait.png?raw=true" alt="Biencarlo" />
               </div>
               <div className="card-content">
-                <a href="https://github.com/sweeneyyy" className="team-link">Sweeney Arnett</a>
+                <a href="https://github.com/biencarlovilla" className="team-link">Biencarlo Villa</a>
               </div>
             </div>
           </div>
