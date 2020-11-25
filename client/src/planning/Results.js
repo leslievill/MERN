@@ -4,17 +4,17 @@ import RestaurantResults from './RestaurantResults.js';
 import axios from 'axios';
 
 class Results extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       query: '',
-      businesses:[],
+      businesses: [],
     }
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   handleInputChange = (e) => {
-    this.setState({query: e.target.value});
+    this.setState({ query: e.target.value });
   }
 
   preventing = (e) => {
@@ -22,7 +22,7 @@ class Results extends Component {
     axios.post('/saved/results', {
       location: this.state.query,
     }).then((res) => {
-      this.setState({businesses: res.data.businesses});
+      this.setState({ businesses: res.data.businesses });
     }).catch((err) => {
       console.log("error:", err);
     });
@@ -31,8 +31,8 @@ class Results extends Component {
   saveClick = (e) => {
     e.preventDefault();
     let businessToSave;
-    for(let i = 0; i < this.state.businesses.length; i++){
-      if(this.state.businesses[i].id === e.target.id){
+    for (let i = 0; i < this.state.businesses.length; i++) {
+      if (this.state.businesses[i].id === e.target.id) {
         businessToSave = this.state.businesses[i];
       }
     }
@@ -52,25 +52,25 @@ class Results extends Component {
     var results;
     var res = this.state.businesses;
 
-    // if(this.state.businesses){
-    //   results = res.map((b)=> {
-    //     <div className="container Results">
-    //       <li>b</li>
-    //     </div>
-    //   });
-    // }else{
-    //   results = <p>none</p>
-    //   console.log(this.state.businesses);
-    // }
+    if (this.state.businesses) {
+      results = res.map((b) => (
+        <div className="container Results">
+          <li>b</li>
+        </div>
+      ));
+    } else {
+      results = <p>none</p>
+      console.log(this.state.businesses);
+    }
 
-    return(
+    return (
       <div className="container Results">
         <div className="row">
           <div className="col s12 m6 z-depth-3">{results}</div>
-            <Search query={this.state.query} handleInputChange={(event) => this.handleInputChange(event)} preventing={this.preventing} onSubmit={this.handleSubmit} />
-            <RestaurantResults businesses={this.state.businesses} saveClick={this.saveClick} />
-          </div>
+          <Search query={this.state.query} handleInputChange={(event) => this.handleInputChange(event)} preventing={this.preventing} onSubmit={this.handleSubmit} />
+          <RestaurantResults businesses={this.state.businesses} saveClick={this.saveClick} />
         </div>
+      </div>
     );
   }
 }

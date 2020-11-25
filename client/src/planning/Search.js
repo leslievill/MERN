@@ -13,7 +13,7 @@ class Search extends Component {
                 placeholder="Enter Location"
                 value={this.props.query}
                 onChange={this.props.handleInputChange} />
-            <button type="submit" value="search" className="waves-effect waves-teal btn-flat">Search<i class="material-icons left">search</i></button>
+            <button type="submit" value="search" className="waves-effect waves-teal btn-flat">Search<i className="material-icons left">search</i></button>
           </form>
         </div>
       </div>
