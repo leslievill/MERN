@@ -7,22 +7,26 @@ var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 // Yelp fusion setup
 const yelp = require('yelp-fusion');
-const apikey = process.env.API_KEY;
+const apikey = process.env.apikey;
 const client = yelp.client(apikey);
 
 //Yelp API call to get restaurant results
 router.post('/results', function (req, res, callback) {
+    // console.log(req.headers)
     const searchRequest = {
         location: req.body.location, //search location from front end
         limit: 12
     }
     client.search(searchRequest).then(response => {
+        console.log(response)
         const result = response.jsonBody;
         const prettyJson = JSON.stringify(result, null, 4);
         res.send(prettyJson);
     }).catch((err) => {
         console.log("error:", err);
     });
+    console.log(searchRequest)
+    console.log(client)
 });
 
 // POST - save restaurant to db for user profile
