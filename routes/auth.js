@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var User = require('../models/user');
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
-
+var Token = require('../models/token');
 // POST /auth/login route - returns a JWT
 router.post('/login', function (req, res, next) {
     console.log('/auth/login post route', req.body);
@@ -28,7 +28,17 @@ router.post('/login', function (req, res, next) {
             var token = jwt.sign(user.toObject(), process.env.JWT_SECRET, {
                 expiresIn: 60 * 60 * 24 // expires in 24 hours
             });
-            res.send({ user: user, token: token });
+            Token.create({current:token}, function(error){
+                if(error){
+                    return res.status(403).send({
+                        error: true,
+                        message: 'Invalid User Credentials or Bad Password!'
+                    });
+
+                }
+                res.send({ user: user, token: token });
+            })
+           
         }
         else {
             // Return an error
