@@ -12,14 +12,20 @@ function checkToken(req, res, next) {
             current: token
         })
             .then(dbToken => {
+
+                // console.log("Token Found")
                 return next()
             })
             .catch(error => {
+                console.log("In catch:", error)
                 return res.status(403).json({ error })
             })
     }
-    return res.status(403).json({ error:"you must have a valid token" })
+    else {
+        return res.status(403).json({ error:"you must have a valid token" })
+    }
 }
+
 router.use("/auth",authRoutes)
 router.use("/saved",checkToken,savedRoutes)
 

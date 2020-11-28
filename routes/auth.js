@@ -30,7 +30,8 @@ router.post('/login', function (req, res, next) {
             });
             Token.create({current:token}, function(error){
                 if(error){
-                    return res.status(403).send({
+
+                     return res.status(403).send({
                         error: true,
                         message: 'Invalid User Credentials or Bad Password!'
                     });
@@ -38,7 +39,7 @@ router.post('/login', function (req, res, next) {
                 }
                 res.send({ user: user, token: token });
             })
-           
+
         }
         else {
             // Return an error
