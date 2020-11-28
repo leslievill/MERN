@@ -1,10 +1,12 @@
 /* DEFAULT STYLES FROM CREATE REACT APP MODULE */
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  height: 400px;
+  height: 450px;
   padding: 20px;
   color: white;
 }
@@ -12,7 +14,8 @@
 .App-title {
   font-size: 90px;
   padding-bottom: 10px;
-  text-shadow: 6px 6px 14px black;
+  text-shadow: 6px 6px 14px rgb(85, 82, 82);
+  font-family: 'Sulphur Point', sans-serif;
 }
 
 /* CUSTOM STYLES */
@@ -28,7 +31,7 @@ nav a {
   font-size: 22px;
   text-shadow: 2px 2px 8px black;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Sulphur Point', sans-serif;
 }
 
 button {
@@ -36,7 +39,7 @@ button {
 }
 
 nav a:hover {
-  color: #7f4dd2;
+  color: #5686ec;
 }
 
 a {
@@ -46,7 +49,7 @@ a {
 
 /* HEADER */
 header {
-  background-image: url('https://cdn5.f-cdn.com/contestentries/54965/4130531/52fc76fc3fde3_thumb900.jpg');
+  background-image: url('https://cdn.dribbble.com/users/1441300/screenshots/3900755/untitled-1.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -156,16 +159,17 @@ header {
 .About-container-how {
   padding-top: 360px;
   padding-bottom: 100px;
-  background-color: #83A2A7;
+  background-color: #bce6f7;
 }
 
 .how-it-works {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid #bce6f7;
   border-radius: 10px;
   height: 250px;
   font-size: 20px;
   text-align: center;
+  font-family: 'Sulphur Point', sans-serif;
 }
 
 .how {
@@ -176,11 +180,13 @@ header {
 /* TEAM SECTION */
 #team {
   padding: 60px 0;
+  font-family: 'Sulphur Point', sans-serif;
 }
 
 #team-description {
   font-size: 18px;
   padding: 10px 0;
+  font-family: 'Sulphur Point', sans-serif;
 }
 
 #team img {
@@ -305,7 +311,7 @@ header {
 
 /* FOOTER */
 .footer {
-  background-color: #83A2A7;
+  background-color: #6bafe6;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -314,6 +320,7 @@ header {
 
 .footer-text {
   color: #fff;
-  font-size: 10px;
+  font-size: 15px;
   text-shadow: 2px 2px 8px black;
+  font-family: 'Sulphur Point', sans-serif;
 }

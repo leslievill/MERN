@@ -15,7 +15,10 @@ class Profile extends Component {
 
   componentWillMount() {
     if(this.props.user && this.props.user.id) {
-      axios.get('/saved/profile/' + this.props.user.id).then((res) => {
+      axios({url:'/saved/profile/' + this.props.user.id,
+    method:"get",
+    headers:{token:localStorage.getItem("mernToken")}
+    }).then((res) => {
         this.setState({
           restaurants: res.data.restaurant,
           user: this.props.user

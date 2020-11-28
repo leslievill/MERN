@@ -57,8 +57,10 @@ userSchema.set('toJSON', {
   }
 });
 
-userSchema.methods.authenticated = function (password, callback) {
-  bcrypt.compareSync(password, this.password, function (err, res) {
+
+userSchema.methods.authenticated = function(password, callback) {
+  bcrypt.compareSync(password, this.password, function(err, res) {
+
     if (err) {
       callback(err);
     } else {

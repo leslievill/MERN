@@ -28,9 +28,10 @@ router.post('/login', function (req, res, next) {
             var token = jwt.sign(user.toObject(), process.env.JWT_SECRET, {
                 expiresIn: 60 * 60 * 24 // expires in 24 hours
             });
-            Token.create({ current: token }, function (error) {
-                if (error) {
-                    return res.status(403).send({
+            Token.create({current:token}, function(error){
+                if(error){
+
+                     return res.status(403).send({
                         error: true,
                         message: 'Invalid User Credentials or Bad Password!'
                     });
