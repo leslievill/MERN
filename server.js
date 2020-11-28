@@ -10,7 +10,7 @@ const app = express();
 
 // Mongoose stuff
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/', {useMongoClient: true});
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/wheretogo', {useMongoClient: true});
 
 // Define middleware here
 app.use(favicon(path.join(__dirname, 'client/public', 'favicon.ico')));
