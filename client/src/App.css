@@ -244,6 +244,11 @@ header {
 }
 
 /* SAVED RESTAURANTS */
+#profile-search {
+  font-family: 'Sulphur Point', sans-serif;
+
+}
+
 .card-image-saved img {
   max-height: 300px;
   max-width: 300px;
@@ -286,6 +291,10 @@ header {
 }
 
 /* PACKING LIST */
+
+#profile-pack {
+  font-family: 'Sulphur Point', sans-serif;
+}
 .packing-list-container {
   background: url('https://i.imgur.com/A7qKs0ml.jpg');
   background-size: cover;
