@@ -23,6 +23,7 @@ router.post('/login', function (req, res, next) {
         hashedPass = user.password || '';
         // compare passwords
         passwordMatch = bcrypt.compareSync(req.body.password, hashedPass);
+        console.log(hashedPass, 'PASSWORD HASH')
         if (passwordMatch) {
             // Make a token and return it as JSON
             var token = jwt.sign(user.toObject(), process.env.JWT_SECRET, {
