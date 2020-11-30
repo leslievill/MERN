@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Logout from '../auth/Logout.js';
 import { Link } from 'react-router-dom';
+import { Animated } from "react-animated-css";
 
 class Nav extends Component {
-  render(){
+  render() {
     let links = <span />;
-    if(this.props.user){
+    if (this.props.user) {
       links = (
         <span>
           <Link to="/saved/profile">Profile</Link>
@@ -22,7 +23,7 @@ class Nav extends Component {
       );
     }
 
-    return(
+    return (
       <div className="navbar-fixed">
         <nav className="transparent z-depth-0">
           <div className="nav-wrapper">
@@ -30,12 +31,15 @@ class Nav extends Component {
               <a href="/">Home</a>
               <a href="/#team">Team</a>
               <Link to="/results">Search</Link>
-                {links}
+              {links}
             </div>
           </div>
         </nav>
         <header className="App-header">
-          <p className="App-title">WhereToGo</p>
+          {/* <p className="App-title">WhereToGo</p> */}
+          <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+            <p className="App-title">WhereToGo</p>
+          </Animated>
         </header>
       </div>
     );
