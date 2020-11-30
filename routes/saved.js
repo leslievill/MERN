@@ -11,7 +11,7 @@ const apikey = process.env.apikey;
 const client = yelp.client(apikey);
 
 //Yelp API call to get restaurant results
-router.post('/results', function (req, res, callback) {
+router.post('/results', function (req, res) {
     // console.log(req.headers)
     const searchRequest = {
         location: req.body.location, //search location from front end
@@ -30,7 +30,7 @@ router.post('/results', function (req, res, callback) {
 });
 
 // POST - save restaurant to db for user profile
-router.post('/results/restaurantsaved', function (req, res, callback) {
+router.post('/results/restaurantsaved', function (req, res) {
     var userId = req.body.user.id;
     User.findById(userId)
         .exec(function (err, foundUser) {
@@ -56,7 +56,7 @@ router.post('/results/restaurantsaved', function (req, res, callback) {
 });
 
 // GET user profile with saved restaurants
-router.get('/profile/:id', function (req, res, callback) {
+router.get('/profile/:id', function (req, res) {
     User.findById(req.params.id)
         .exec(function (err, user) {
             if (err) { return console.log('error', err); }
@@ -65,7 +65,7 @@ router.get('/profile/:id', function (req, res, callback) {
 });
 
 // POST packing list item to user db
-router.post('/profile/list/:userId', function (req, res, callback) {
+router.post('/profile/list/:userId', function (req, res) {
     var { userId } = req.params;
     var items = req.body.list;
     User.findById(userId)
@@ -86,7 +86,7 @@ router.post('/profile/list/:userId', function (req, res, callback) {
 });
 
 // DELETE packing list item from user db
-router.delete('/profile/list/:userId', function (req, res, next) {
+router.delete('/profile/list/:userId', function (req, res) {
     const { userId } = req.params;
     User.findById(userId, function (err, user) {
         User.update({ _id: userId }, {

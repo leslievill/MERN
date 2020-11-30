@@ -7,7 +7,7 @@ var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 var Token = require('../models/token');
 // POST /auth/login route - returns a JWT
-router.post('/login', function (req, res, next) {
+router.post('/login', function (req, res) {
     console.log('/auth/login post route', req.body);
     var hashedPass = '';
     var passwordMatch = false;
@@ -54,7 +54,7 @@ router.post('/login', function (req, res, next) {
 
 
 /* POST /auth/signup route */
-router.post('/signup', function (req, res, next) {
+router.post('/signup', function (req, res) {
     console.log('/auth/signup post route', req.body);
     // Find by email
     User.findOne({ email: req.body.email }, function (err, user) {
@@ -85,7 +85,7 @@ router.post('/signup', function (req, res, next) {
 });
 
 // This is checked on a browser refresh
-router.post('/me/from/token', function (req, res, next) {
+router.post('/me/from/token', function (req, res) {
     // check header or url parameters or post parameters for token
     var token = req.body.token || req.query.token;
     if (!token) {
