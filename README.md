@@ -14,9 +14,9 @@
 
 
 ## Description
-The most excitement I’ve gotten during this pandemic is trying out new places to eat at (even though I have to take the food to go). I know a lot of us miss going out to eat with our friends and family and going to places like museums, the park, movies, etc. We wanted to make an app that allows you to get excited about places you might want to go to when all this chaos is over. 
+The most excitement we’ve gotten during this pandemic is trying out new places to eat at (even though we have to take the food to go). We know a lot of us miss going out to eat with our friends and family and going to places like museums, the park, movies, etc. We wanted to make an app that allows you to get excited about places you might want to go to when all this chaos is over. 
 
-Wheretogo will show you all the must-see and must-eat places in any city you want to visit.
+Our MERN app, WhereToGo, will show you all the must-see and must-eat places in any city you want to visit.
 
 As avid yelp users, we know the importance of finding a good place to eat or visit in a city you may be unfamiliar with. We wanted to utilize the yelp feature of searching for a city depending on where you wanted to go in the world. Our app allows user to create a profile in order to save restaurants and other popular places as well as create a packing list so they know what to bring on their travels. 
 
@@ -25,7 +25,7 @@ As avid yelp users, we know the importance of finding a good place to eat or vis
 
 
 ## Visuals
-![visual](public/use.gif)
+![visual](https://github.com/leslievill/MERN/blob/main/assets/app.gif?raw=true)
 
 ## User Story
 ```
@@ -47,6 +47,15 @@ As a USER I want a delete button from my list so I can delete items
 As a USER I want to see a team page so I know who made the app
 As a USER I want to see the the individual team githubs 
 ```
+
+## Feautures
+- Sign up/Login page
+- Add items to your packing list
+- Delete buttom for specific list
+- Search page for searching cities
+- Yelp API for returning results when city is searched
+- Save specific restaurants and places 
+- Logout button
 
 
 ## Installation 
@@ -78,9 +87,18 @@ Once you are done with your code, go to the folder's directory and run the follo
 ## License
 MIT License
   
-## Contributors
-  - [Biencarlo Villa](https://github.com/biencarlovilla)
-  - [Leslie Villatoro](https://github.com/leslievill)
-  - [Ken Tanoue](https://github.com/kent28808)
+
+## Authors
+**Ken Tanoue**
+- [Github](https://github.com/kent28808)
+
+
+**Biencarlo Villa** 
+- [Github](https://github.com/biencarlovilla)
+- [LinkedIn](https://www.linkedin.com/in/biencarlo-villa/)
+
+**Leslie Villatoro**
+- [Github](https://github.com/leslievill)
+- [LinkedIn](https://www.linkedin.com/in/leslievillatoro/)
    
 
