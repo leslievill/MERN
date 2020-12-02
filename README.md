@@ -20,11 +20,15 @@ Wheretogo will show you all the must-see and must-eat places in any city you wan
 
 As avid yelp users, we know the importance of finding a good place to eat or visit in a city you may be unfamiliar with. We wanted to utilize the yelp feature of searching for a city depending on where you wanted to go in the world. Our app allows user to create a profile in order to save restaurants and other popular places as well as create a packing list so they know what to bring on their travels. 
 
+## Deployed-Link
+  [Live ](https://wheretogo2.herokuapp.com/)
+
 
 ## Visuals
 ![visual](public/use.gif)
 
 ## User Story
+```
 As a USER I want to see a sign-up button so I can sign in.
 As a USER I want to see a form when I click on the sign up button, I can create my account
 As a USER I want to click a button to submit my information so I can access to app
@@ -42,14 +46,19 @@ As a USER I want to add to my packing list so that I can see what I have added
 As a USER I want a delete button from my list so I can delete items 
 As a USER I want to see a team page so I know who made the app
 As a USER I want to see the the individual team githubs 
-
+```
 
 
 ## Installation 
+```
 * npx create-react-app (folder-name) 
+```
 
 Once you are done with your code, go to the folder's directory and run the following code 
+```
 * npm start
+```
+
 
 ## Technologies
 * React 
@@ -70,9 +79,8 @@ Once you are done with your code, go to the folder's directory and run the follo
 MIT License
   
 ## Contributors
-   [Biencarlo Villa](https://github.com/biencarlovilla)
-   [Leslie Villatoro](https://github.com/leslievill)
-   [Ken Tanoue](https://github.com/kent28808)
+  - [Biencarlo Villa](https://github.com/biencarlovilla)
+  - [Leslie Villatoro](https://github.com/leslievill)
+  - [Ken Tanoue](https://github.com/kent28808)
    
-## Deployed-Link
-  [Live ](https://wheretogo2.herokuapp.com/)
+
