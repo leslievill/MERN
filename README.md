@@ -25,7 +25,7 @@ As avid yelp users, we know the importance of finding a good place to eat or vis
 
 
 ## Visuals
-![visual](public/use.gif)
+![visual](https://github.com/leslievill/MERN/blob/main/assets/app.gif)
 
 ## User Story
 ```
